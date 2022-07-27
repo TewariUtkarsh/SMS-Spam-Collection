@@ -4,3 +4,6 @@ flask
 flask_cors
 sklearn
 nltk
+gunicorn
+
+

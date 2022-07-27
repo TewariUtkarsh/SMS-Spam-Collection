@@ -5,7 +5,10 @@ app = Flask(__name__)
 CORS(app)
 
 
-@app.route('/')
+@app.route('/', methods=['POST', 'GET'])
+@cross_origin()
+def index():
+    return "NLP app running!!"
 
 
 if __name__=='__main__':
